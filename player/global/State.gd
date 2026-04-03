@@ -29,10 +29,3 @@ func process_frame(_delta: float) -> void:
 
 func process_physics(_delta: float) -> void:
 	pass
-
-# Inputs Methods
-func get_movement_input() -> float:
-	return Input.get_axis('move_left', 'move_right')
-
-func is_jumping() -> bool:
-	return Input.is_action_just_pressed('jump')

@@ -18,3 +18,10 @@ func _process(_delta: float) -> void:
 # Custom functions
 func do_animation(color):
 	$ColorRect.color = color
+
+# Inputs Methods
+func get_movement_input() -> float:
+	return Input.get_axis('move_left', 'move_right')
+
+func is_jumping() -> bool:
+	return Input.is_action_just_pressed('jump')

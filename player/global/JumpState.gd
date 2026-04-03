@@ -16,7 +16,7 @@ func process_physics(delta: float) -> void:
 	if player.velocity.y > 0:
 		return _state_machine.change_state(_state_machine.FALL_STATE)
 	
-	var movement = get_movement_input() * move_speed
+	var movement = player.get_movement_input() * move_speed
 	
 	player.velocity.x = movement
 	player.move_and_slide()
