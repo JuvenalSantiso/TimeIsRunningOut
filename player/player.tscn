@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://b8yqlor8n33dl"]
+
+[ext_resource type="Script" uid="uid://fi6sg5tl4x2h" path="res://player/player.gd" id="1_rkbax"]
+[ext_resource type="Texture2D" uid="uid://ces7pp3rpb5wr" path="res://img/precav_sprite.png" id="2_g1dw6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_32lhk"]
+size = Vector2(101.25, 120.25)
+
+[node name="Player" type="CharacterBody2D" unique_id=548233127 groups=["players"]]
+script = ExtResource("1_rkbax")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=503261640]
+position = Vector2(1.375, 0.875)
+shape = SubResource("RectangleShape2D_32lhk")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1535025396]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.5
+offset_top = -56.0
+offset_right = 43.5
+offset_bottom = 56.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="PrecavSprite" type="Sprite2D" parent="." unique_id=782585442]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_g1dw6")

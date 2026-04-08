@@ -19,6 +19,9 @@ func _process(_delta: float) -> void:
 func do_animation(color):
 	$ColorRect.color = color
 
+func reset_player():
+	print("reset")
+
 # Inputs Methods
 func get_movement_input() -> float:
 	return Input.get_axis('move_left', 'move_right')

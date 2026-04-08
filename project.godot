@@ -15,6 +15,14 @@ run/main_scene="uid://dmjhxsppt8pdj"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameManager="*uid://27pqcng2maqd"
+
+[global_group]
+
+players="Jugador y sus clones"
+
 [input]
 
 move_right={

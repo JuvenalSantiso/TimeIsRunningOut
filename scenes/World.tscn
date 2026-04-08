@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://dmjhxsppt8pdj"]
 
-[ext_resource type="Script" uid="uid://fi6sg5tl4x2h" path="res://player/player.gd" id="1_kqs1s"]
-[ext_resource type="Texture2D" uid="uid://ces7pp3rpb5wr" path="res://img/precav_sprite.png" id="2_32lhk"]
+[ext_resource type="Script" uid="uid://tmkht0l4n2xi" path="res://scenes/world.gd" id="1_32lhk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_io8um"]
 size = Vector2(1354, 67)
@@ -9,10 +8,8 @@ size = Vector2(1354, 67)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kqs1s"]
 size = Vector2(346.5, 41.5)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_32lhk"]
-size = Vector2(101.25, 120.25)
-
 [node name="World" type="Node2D" unique_id=1867687822]
+script = ExtResource("1_32lhk")
 
 [node name="Ground" type="StaticBody2D" parent="." unique_id=551735713]
 position = Vector2(581, 642)
@@ -78,29 +75,10 @@ polygon = PackedVector2Array(0, -10, -10, 10, 10, 10)
 color = Color(1, 0.22745098, 0.13333334, 1)
 polygon = PackedVector2Array(0, -10, 10, 10, -10, 10)
 
-[node name="Player" type="CharacterBody2D" parent="." unique_id=683725093]
-position = Vector2(105, 547)
-script = ExtResource("1_kqs1s")
+[node name="Spawn" type="Marker2D" parent="." unique_id=1823451107]
+position = Vector2(185, 370)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=602560356]
-position = Vector2(1.375, 0.875)
-shape = SubResource("RectangleShape2D_32lhk")
+[node name="NextGeneration" type="Timer" parent="." unique_id=138646771]
+wait_time = 5.0
 
-[node name="ColorRect" type="ColorRect" parent="Player" unique_id=1319572582]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -43.5
-offset_top = -56.0
-offset_right = 43.5
-offset_bottom = 56.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
-[node name="PrecavSprite" type="Sprite2D" parent="Player" unique_id=1665925919]
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("2_32lhk")
+[connection signal="timeout" from="NextGeneration" to="." method="_on_next_generation_timeout"]
