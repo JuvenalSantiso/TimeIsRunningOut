@@ -23,11 +23,6 @@ func spawn_player():
 	var player = player_scene.instantiate()
 	spawn_players.add_child(player)
 
-func spawn_new_player():
-	var player = player_scene.instantiate()
-	player.convert_to_shadow()
-	spawn_players.add_child(player)
-
 func delete_players():
 	for pl in get_tree().get_nodes_in_group("players"):
 			pl.queue_free()
@@ -37,7 +32,7 @@ func _physics_process(_delta):
 		add_new_player = false
 		for pl in get_tree().get_nodes_in_group("players"):
 			pl.reset_player()
-		spawn_new_player()
+		spawn_player()
 
 #endregion
 

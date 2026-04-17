@@ -13,6 +13,7 @@ script = ExtResource("1_32lhk")
 
 [node name="Ground" type="StaticBody2D" parent="." unique_id=551735713]
 position = Vector2(581, 642)
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=636759948]
 shape = SubResource("RectangleShape2D_io8um")
@@ -34,6 +35,7 @@ color = Color(0.19607843, 0.25490198, 0, 1)
 
 [node name="Platform" type="StaticBody2D" parent="." unique_id=290466315]
 position = Vector2(916, 464)
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform" unique_id=384590507]
 position = Vector2(0.75, 0.25)

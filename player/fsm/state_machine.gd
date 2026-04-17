@@ -28,6 +28,3 @@ func change_state(new_state: String) -> void:
 
 func process_physics(delta: float) -> void:
 	_current_state.process_physics(delta)
-
-func process_input(event: InputEvent) -> void:
-	_current_state.process_input(event)
