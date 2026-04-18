@@ -23,7 +23,7 @@ func _physics_process(delta: float) -> void:
 		new_input_frame.jump = self.is_jumping()
 		self.buffer_mirror.capture_input(new_input_frame)
 	else:
-		self.buffer_mirror.pop_buffer_action()
+		self.buffer_mirror.next_buffer_action()
 	
 func _process(_delta: float) -> void: 
 	pass
