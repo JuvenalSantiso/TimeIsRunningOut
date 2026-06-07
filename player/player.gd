@@ -6,6 +6,7 @@ var buffer_mirror: BufferMirrorEvents
 var initial_pos: Vector2 
 var is_dead: bool = false
 
+#region Godot functions
 func _enter_tree() -> void:
 	self.buffer_mirror = BufferMirrorEvents.new()
 	
@@ -27,6 +28,8 @@ func _physics_process(delta: float) -> void:
 	
 func _process(_delta: float) -> void: 
 	pass
+
+#endregion
 	
 # Custom functions
 func do_animation(color):
