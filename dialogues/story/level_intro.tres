@@ -1,8 +1,39 @@
 [gd_resource type="Resource" script_class="DialogueResource" format=3 uid="uid://ceqcxy1qtaevg"]
 
-[ext_resource type="Script" uid="uid://cqulwlalbjk6x" path="res://dialogues/resources/dialogue_resource.gd" id="1_i3q3w"]
-[ext_resource type="Script" uid="uid://87kdxj8sjnel" path="res://dialogues/resources/dialogue_line_resource.gd" id="1_wrnnu"]
+[ext_resource type="Script" uid="uid://cqulwlalbjk6x" path="res://resources/dialogue_resource.gd" id="1_i3q3w"]
+[ext_resource type="Script" uid="uid://87kdxj8sjnel" path="res://resources/dialogue_line_resource.gd" id="1_wrnnu"]
+[ext_resource type="Resource" uid="uid://dywm0othu75j6" path="res://database/characters/precavidus.tres" id="2_73apj"]
+[ext_resource type="Resource" uid="uid://b72pwd0nw2w6w" path="res://database/characters/pawla.tres" id="3_43pi2"]
+
+[sub_resource type="Resource" id="Resource_wrnnu"]
+script = ExtResource("1_wrnnu")
+speaker = ExtResource("2_73apj")
+emotion = "sad"
+text = "Me he caido de la torre!!"
+metadata/_custom_type_script = "uid://87kdxj8sjnel"
+
+[sub_resource type="Resource" id="Resource_nnku4"]
+script = ExtResource("1_wrnnu")
+speaker = ExtResource("3_43pi2")
+emotion = "sad"
+text = "Y yo me he ensuciado las patas!"
+metadata/_custom_type_script = "uid://87kdxj8sjnel"
+
+[sub_resource type="Resource" id="Resource_73apj"]
+script = ExtResource("1_wrnnu")
+speaker = ExtResource("2_73apj")
+emotion = "happy"
+text = "Asi que nada vamos a subir de nuevo hay que ser positivo"
+metadata/_custom_type_script = "uid://87kdxj8sjnel"
+
+[sub_resource type="Resource" id="Resource_43pi2"]
+script = ExtResource("1_wrnnu")
+speaker = ExtResource("3_43pi2")
+emotion = "sad"
+text = "Ahora encima tengo que escucharlo modo positivo ..."
+metadata/_custom_type_script = "uid://87kdxj8sjnel"
 
 [resource]
 script = ExtResource("1_i3q3w")
+lines = Array[ExtResource("1_wrnnu")]([SubResource("Resource_wrnnu"), SubResource("Resource_nnku4"), SubResource("Resource_73apj"), SubResource("Resource_43pi2")])
 metadata/_custom_type_script = "uid://cqulwlalbjk6x"

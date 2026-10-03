@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://crn37mrjaeqrk" path="res://scenes/main_menu.gd" id="1_l6cm7"]
 [ext_resource type="Texture2D" uid="uid://cgmltsulymwvb" path="res://img/main-menu.png" id="2_ekxnf"]
+[ext_resource type="PackedScene" uid="uid://ca3w43dc05rpm" path="res://dialogues/scene/custom_balloon.tscn" id="3_bqqt6"]
 
 [node name="MainMenu" type="Node2D" unique_id=433703230]
 script = ExtResource("1_l6cm7")
@@ -40,5 +41,11 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Start Game"
+
+[node name="StartDialogue" type="Button" parent="MainUI/HBoxContainer" unique_id=1474137651]
+layout_mode = 2
+text = "Start Dialogue"
+
+[node name="Dialogue" parent="." unique_id=1716756291 instance=ExtResource("3_bqqt6")]
 
 [connection signal="button_up" from="MainUI/HBoxContainer/Button" to="." method="_on_button_start_game"]
