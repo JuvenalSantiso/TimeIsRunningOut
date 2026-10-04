@@ -1,5 +1,8 @@
 extends Node
-class_name DialogueManager
+
+signal dialogue_started
+signal dialogue_finished
+signal line_changed(line: DialogueLine)
 
 var current_dialogue: DialogueResource
 var current_line_index: int = 0
@@ -8,6 +11,8 @@ var current_line_index: int = 0
 func start_dialogue(dialogue: DialogueResource):
 	current_dialogue = dialogue
 	current_line_index = 0
+
+	dialogue_started.emit()
 
 	show_current_line()
 
@@ -21,10 +26,7 @@ func show_current_line():
 		return
 
 	var line := current_dialogue.lines[current_line_index]
-
-	print(line.speaker.display_name)
-	print(line.emotion)
-	print(line.text)
+	line_changed.emit(line)
 
 func next_line():
 	current_line_index += 1
@@ -34,5 +36,7 @@ func next_line():
 func end_dialogue():
 	current_dialogue = null
 	current_line_index = 0
+	
+	dialogue_finished.emit()
 
 	print("Dialogue finished.")

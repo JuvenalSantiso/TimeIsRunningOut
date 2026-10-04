@@ -47,5 +47,7 @@ layout_mode = 2
 text = "Start Dialogue"
 
 [node name="Dialogue" parent="." unique_id=1716756291 instance=ExtResource("3_bqqt6")]
+visible = false
 
 [connection signal="button_up" from="MainUI/HBoxContainer/Button" to="." method="_on_button_start_game"]
+[connection signal="button_up" from="MainUI/HBoxContainer/StartDialogue" to="." method="_on_start_dialogue_button_up"]
