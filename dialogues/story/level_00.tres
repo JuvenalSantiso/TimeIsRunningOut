@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3 uid="uid://bbhxl8n4xcjgm"]
+
+[ext_resource type="Script" uid="uid://87kdxj8sjnel" path="res://resources/dialogue_line_resource.gd" id="1_4d5bo"]
+[ext_resource type="Script" uid="uid://dwekkdfyvufy2" path="res://resources/character_data.gd" id="2_ytqk1"]
+[ext_resource type="Resource" uid="uid://b72pwd0nw2w6w" path="res://database/characters/pawla.tres" id="3_qncrh"]
+[ext_resource type="Script" uid="uid://cqulwlalbjk6x" path="res://resources/dialogue_resource.gd" id="4_ivdqt"]
+
+[sub_resource type="Resource" id="Resource_fslby"]
+script = ExtResource("2_ytqk1")
+id = &"PRCV"
+display_name = "Precavidus"
+metadata/_custom_type_script = "uid://dwekkdfyvufy2"
+
+[sub_resource type="Resource" id="Resource_1nybo"]
+script = ExtResource("1_4d5bo")
+speaker = SubResource("Resource_fslby")
+emotion = 2
+text = "Me he caido de la torre!! :("
+
+[sub_resource type="Resource" id="Resource_hqg0c"]
+script = ExtResource("1_4d5bo")
+speaker = ExtResource("3_qncrh")
+emotion = 2
+text = "Y yo me he ensuciado las patas! Con las uñas pintadas D:<"
+
+[sub_resource type="Resource" id="Resource_0fhwl"]
+script = ExtResource("1_4d5bo")
+speaker = SubResource("Resource_fslby")
+emotion = 1
+text = "Asi que nada vamos a subir de nuevo hay que ser positivo"
+
+[sub_resource type="Resource" id="Resource_k8i1h"]
+script = ExtResource("1_4d5bo")
+speaker = ExtResource("3_qncrh")
+emotion = 2
+text = "Ahora encima tengo que escucharlo modo positivo ..."
+
+[resource]
+script = ExtResource("4_ivdqt")
+lines = Array[ExtResource("1_4d5bo")]([SubResource("Resource_1nybo"), SubResource("Resource_hqg0c"), SubResource("Resource_0fhwl"), SubResource("Resource_k8i1h")])

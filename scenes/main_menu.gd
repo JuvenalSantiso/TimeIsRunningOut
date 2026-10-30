@@ -5,4 +5,4 @@ func _on_button_start_game() -> void:
 
 
 func _on_start_dialogue_button_up() -> void:
-	DialogueManager.start_dialogue(preload("res://dialogues/story/level_intro.tres"))
+	DialogueManager.start_dialogue(preload("res://dialogues/story/level_00.tres"))

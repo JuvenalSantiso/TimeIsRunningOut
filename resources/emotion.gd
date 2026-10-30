@@ -1,4 +1,4 @@
-class_name Emotion
+class_name Emotion 
 
 enum Type {
 	NEUTRAL,

@@ -21,7 +21,7 @@ func _ready():
 	
 
 func _process(delta: float) -> void:
-	if(Input.is_action_just_pressed("ui_left")):
+	if(Input.is_action_just_pressed("ui_left")): #TODO: Cambiar y revisa esta action
 		DialogueManager.next_line()
 
 func _on_line_changed(line: DialogueLine):

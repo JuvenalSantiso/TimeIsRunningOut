@@ -8,28 +8,24 @@
 [sub_resource type="Resource" id="Resource_wrnnu"]
 script = ExtResource("1_wrnnu")
 speaker = ExtResource("2_73apj")
-emotion = "sad"
 text = "Me he caido de la torre!!"
 metadata/_custom_type_script = "uid://87kdxj8sjnel"
 
 [sub_resource type="Resource" id="Resource_nnku4"]
 script = ExtResource("1_wrnnu")
 speaker = ExtResource("3_43pi2")
-emotion = "sad"
 text = "Y yo me he ensuciado las patas!"
 metadata/_custom_type_script = "uid://87kdxj8sjnel"
 
 [sub_resource type="Resource" id="Resource_73apj"]
 script = ExtResource("1_wrnnu")
 speaker = ExtResource("2_73apj")
-emotion = "happy"
 text = "Asi que nada vamos a subir de nuevo hay que ser positivo"
 metadata/_custom_type_script = "uid://87kdxj8sjnel"
 
 [sub_resource type="Resource" id="Resource_43pi2"]
 script = ExtResource("1_wrnnu")
 speaker = ExtResource("3_43pi2")
-emotion = "sad"
 text = "Ahora encima tengo que escucharlo modo positivo ..."
 metadata/_custom_type_script = "uid://87kdxj8sjnel"
 

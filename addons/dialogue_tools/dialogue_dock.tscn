@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bnfgcrb2w6poy"]
+
+[ext_resource type="Script" uid="uid://bdf43uvs42q6o" path="res://addons/dialogue_tools/dialogue_dock.gd" id="1_0ise0"]
+[ext_resource type="Resource" uid="uid://blwtx8pn7orcl" path="res://database/characters/all_characters.tres" id="2_355x4"]
+
+[node name="DialogueDock" type="VBoxContainer" unique_id=1399331605]
+script = ExtResource("1_0ise0")
+character_database = ExtResource("2_355x4")
+
+[node name="Title" type="Label" parent="." unique_id=1778700933]
+layout_mode = 2
+text = "Dialogue Tools"
+
+[node name="ImportButton" type="Button" parent="." unique_id=100858360]
+layout_mode = 2
+text = "Import CSV"
+
+[node name="StatusTag" type="Label" parent="." unique_id=414817132]
+layout_mode = 2
+text = "Select a CSV to import"
+
+[node name="FileDialog" type="FileDialog" parent="." unique_id=1375596825]
+oversampling_override = 1.0
+title = "Open a File"
+file_mode = 0
+filters = PackedStringArray("*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files")

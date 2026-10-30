@@ -32,7 +32,7 @@ window/size/borderless=true
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/dialogue_tools/plugin.cfg")
 
 [global_group]
 
