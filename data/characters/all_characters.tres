@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="CharacterDatabase" format=3 uid="uid://blwtx8pn7orcl"]
 
-[ext_resource type="Script" uid="uid://dwekkdfyvufy2" path="res://resources/character_data.gd" id="1_fslby"]
-[ext_resource type="Resource" uid="uid://b72pwd0nw2w6w" path="res://database/characters/pawla.tres" id="2_8ap5i"]
-[ext_resource type="Script" uid="uid://cloiimwhndnbm" path="res://resources/character_database.gd" id="2_fkup5"]
+[ext_resource type="Script" uid="uid://dwekkdfyvufy2" path="res://data/characters/resources/character_data.gd" id="1_fslby"]
+[ext_resource type="Resource" uid="uid://b72pwd0nw2w6w" path="res://data/characters/pawla.tres" id="2_8ap5i"]
+[ext_resource type="Script" uid="uid://cloiimwhndnbm" path="res://data/characters/resources/character_database.gd" id="2_fkup5"]
 
 [sub_resource type="Resource" id="Resource_fslby"]
 script = ExtResource("1_fslby")

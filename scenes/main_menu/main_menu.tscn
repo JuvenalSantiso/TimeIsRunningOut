@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cpxkk44oiuv07"]
 
-[ext_resource type="Script" uid="uid://crn37mrjaeqrk" path="res://scenes/main_menu.gd" id="1_l6cm7"]
-[ext_resource type="Texture2D" uid="uid://cgmltsulymwvb" path="res://img/main-menu.png" id="2_ekxnf"]
-[ext_resource type="PackedScene" uid="uid://ca3w43dc05rpm" path="res://dialogues/scene/custom_balloon.tscn" id="3_bqqt6"]
+[ext_resource type="Script" uid="uid://crn37mrjaeqrk" path="res://scenes/main_menu/main_menu.gd" id="1_l6cm7"]
+[ext_resource type="Texture2D" uid="uid://cgmltsulymwvb" path="res://assets/main-menu.png" id="2_ekxnf"]
+[ext_resource type="PackedScene" uid="uid://ca3w43dc05rpm" path="res://scenes/dialogue/custom_balloon.tscn" id="3_bqqt6"]
 
 [node name="MainMenu" type="Node2D" unique_id=433703230]
 script = ExtResource("1_l6cm7")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqdbr0w7qk750"
-path="res://.godot/imported/pawla_normal.png-63cbde7de9021168edf045b73f3d7d7b.ctex"
+uid="uid://cgmltsulymwvb"
+path="res://.godot/imported/main-menu.png-847ee1b82a40cc8625df7db4122cf193.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/dialogue/pawla_normal.png"
-dest_files=["res://.godot/imported/pawla_normal.png-63cbde7de9021168edf045b73f3d7d7b.ctex"]
+source_file="res://assets/main-menu.png"
+dest_files=["res://.godot/imported/main-menu.png-847ee1b82a40cc8625df7db4122cf193.ctex"]
 
 [params]
 

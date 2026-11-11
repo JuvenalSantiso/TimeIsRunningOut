@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" format=3 uid="uid://bbhxl8n4xcjgm"]
 
-[ext_resource type="Script" uid="uid://87kdxj8sjnel" path="res://resources/dialogue_line_resource.gd" id="1_4d5bo"]
-[ext_resource type="Script" uid="uid://dwekkdfyvufy2" path="res://resources/character_data.gd" id="2_ytqk1"]
-[ext_resource type="Resource" uid="uid://b72pwd0nw2w6w" path="res://database/characters/pawla.tres" id="3_qncrh"]
-[ext_resource type="Script" uid="uid://cqulwlalbjk6x" path="res://resources/dialogue_resource.gd" id="4_ivdqt"]
+[ext_resource type="Script" uid="uid://87kdxj8sjnel" path="res://data/dialogues/resources/dialogue_line_resource.gd" id="1_4d5bo"]
+[ext_resource type="Script" uid="uid://dwekkdfyvufy2" path="res://data/characters/resources/character_data.gd" id="2_ytqk1"]
+[ext_resource type="Resource" uid="uid://b72pwd0nw2w6w" path="res://data/characters/pawla.tres" id="3_qncrh"]
+[ext_resource type="Script" uid="uid://cqulwlalbjk6x" path="res://data/dialogues/resources/dialogue_resource.gd" id="4_ivdqt"]
 
 [sub_resource type="Resource" id="Resource_fslby"]
 script = ExtResource("2_ytqk1")

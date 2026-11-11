@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ces7pp3rpb5wr"
-path="res://.godot/imported/precav_sprite.png-cb7a919263003739291091847abbf96d.ctex"
+uid="uid://dsfqu4tjef8t0"
+path="res://.godot/imported/precav_surprise.png-c41eba689189d77ddd6fb21c387f4aa5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/precav_sprite.png"
-dest_files=["res://.godot/imported/precav_sprite.png-cb7a919263003739291091847abbf96d.ctex"]
+source_file="res://assets/dialogue/precav_surprise.png"
+dest_files=["res://.godot/imported/precav_surprise.png-c41eba689189d77ddd6fb21c387f4aa5.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bnfgcrb2w6poy"]
 
 [ext_resource type="Script" uid="uid://bdf43uvs42q6o" path="res://addons/dialogue_tools/dialogue_dock.gd" id="1_0ise0"]
-[ext_resource type="Resource" uid="uid://blwtx8pn7orcl" path="res://database/characters/all_characters.tres" id="2_355x4"]
+[ext_resource type="Resource" uid="uid://blwtx8pn7orcl" path="res://data/characters/all_characters.tres" id="2_355x4"]
 
 [node name="DialogueDock" type="VBoxContainer" unique_id=1399331605]
 script = ExtResource("1_0ise0")
@@ -23,4 +23,4 @@ text = "Select a CSV to import"
 oversampling_override = 1.0
 title = "Open a File"
 file_mode = 0
-filters = PackedStringArray("*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files")
+filters = PackedStringArray("*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files", "*.csv ; CSV Files")

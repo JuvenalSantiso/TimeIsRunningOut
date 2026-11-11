@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsfqu4tjef8t0"
-path="res://.godot/imported/precav_surprise.png-a5b56d45c7f0dfad4cf12e3f5320a9c2.ctex"
+uid="uid://cqdbr0w7qk750"
+path="res://.godot/imported/pawla_normal.png-79e0261daecb802b314277efebbf5e97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/dialogue/precav_surprise.png"
-dest_files=["res://.godot/imported/precav_surprise.png-a5b56d45c7f0dfad4cf12e3f5320a9c2.ctex"]
+source_file="res://assets/dialogue/pawla_normal.png"
+dest_files=["res://.godot/imported/pawla_normal.png-79e0261daecb802b314277efebbf5e97.ctex"]
 
 [params]
 

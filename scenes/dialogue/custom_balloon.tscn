@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ca3w43dc05rpm"]
 
-[ext_resource type="Script" uid="uid://bcajme3k7l4c5" path="res://dialogues/scene/custom_balloon.gd" id="1_e8b16"]
-[ext_resource type="Texture2D" uid="uid://clw7n2orpm4rk" path="res://img/dialogue/precav_normal.png" id="1_fgu3q"]
+[ext_resource type="Script" uid="uid://bcajme3k7l4c5" path="res://scenes/dialogue/custom_balloon.gd" id="1_e8b16"]
+[ext_resource type="Texture2D" uid="uid://clw7n2orpm4rk" path="res://assets/dialogue/precav_normal.png" id="1_fgu3q"]
 
 [sub_resource type="Animation" id="Animation_nlsx6"]
 length = 3.0
